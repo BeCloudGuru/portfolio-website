@@ -1,0 +1,40 @@
+version: 0.2
+
+
+
+phases:
+
+  install:
+
+    runtime-versions:
+
+      nodejs: 18
+
+  pre_build:
+
+    commands:
+
+      - echo "Starting build process..."
+
+  build:
+
+    commands:
+
+      - echo "Build phase - no compilation needed for static site"
+
+  post_build:
+
+    commands:
+
+      - echo "Build completed successfully"
+
+
+
+artifacts:
+
+  files:
+
+    - '**/*'
+
+  base-directory: '.'
+
